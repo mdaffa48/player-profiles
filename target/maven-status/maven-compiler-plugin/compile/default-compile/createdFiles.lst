@@ -1,0 +1,15 @@
+me\aglerr\events\PlayerInteract.class
+me\aglerr\utils\customitems\Items.class
+me\aglerr\utils\customitems\Loader.class
+me\aglerr\utils\ItemBuilder.class
+me\aglerr\utils\Utils$1.class
+me\aglerr\events\PlayerInteract$1.class
+me\aglerr\utils\fastinv\FastInvManager$InventoryListener.class
+me\aglerr\utils\fastinv\FastInvManager.class
+me\aglerr\configs\CustomItems.class
+me\aglerr\commands\PlayerProfiles.class
+me\aglerr\commands\Profile.class
+me\aglerr\utils\Armory.class
+me\aglerr\utils\Utils.class
+me\aglerr\utils\fastinv\FastInv.class
+me\aglerr\Profiles.class

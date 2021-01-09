@@ -1,0 +1,14 @@
+name: PlayerProfiles
+version: 5.1-BETA
+main: me.aglerr.Profiles
+author: aglerr
+description: Plugin to show player profiles
+api-version: 1.13
+depend: [PlaceholderAPI]
+softdepend: [CombatLogX]
+
+commands:
+  profile:
+    aliases: [profiles]
+  playerprofiles:
+    aliases: [pprofiles, playerp]

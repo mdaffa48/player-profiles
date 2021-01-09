@@ -1,0 +1,132 @@
+# PlayerProfiles by aglerr
+#
+# Material List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# Sounds List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+#
+# Need support? Join my discord server https://discord.gg/D5x2fYzVv7
+# Wiki: https://aglerr.gitbook.io/wiki/
+# Thanks for using my plugin!
+
+options:
+  disable-npc: true #Disable player from viewing NPC profile.
+  disable-in-combat: false #Required CombatLogX to run!
+  shift-click: true #With this options, player required to shift click to open others profiles.
+  interact-permission: false #Should we use permission when someone try to open profile with shift click?
+  update-gui-on-click: false #Basically every click will update the GUI, such as updating player armor and placeholder.
+
+cooldown:
+  enabled: true
+  duration: 3 #in seconds
+
+disabledWorlds:
+  - pvpworld
+  - testworld
+  - casesensitive
+
+gui:
+  fill-inventory:
+    enabled: true
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      amount: 1
+      name: '&f'
+  title: "%player_name%'s profiles"
+  size: 54
+  items:
+    helmet:
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 10
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0 #Only for 1.14+
+      name: "&6Helmet"
+      lore:
+        - "&cEmpty!"
+    chestplate:
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 19
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0 #Only for 1.14+
+      name: "&6Chestplate"
+      lore:
+        - "&cEmpty!"
+    leggings:
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 28
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0 #Only for 1.14+
+      name: "&6Leggings"
+      lore:
+        - "&cEmpty!"
+    boots:
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 37
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0 #Only for 1.14+
+      name: "&6Boots"
+      lore:
+        - "&cEmpty!"
+    main-hand:
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 20
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0
+      name: "&6Main Hand"
+      lore:
+        - "&cEmpty!"
+    off-hand: # Only for 1.9+ version. (Will return null)
+      enabled: true
+      material: RED_STAINED_GLASS_PANE
+      slot: 29
+      glowing: false
+      hide_attributes: true
+      CustomModelData: 0
+      name: "&6Off Hand"
+      lore:
+        - "&cEmpty!"
+
+messages:
+  prefix: '&6&l[!]'
+  disabled-worlds: "%prefix% &cYou can't view players profiles on this world!"
+  in-combat: "%prefix% &cYou can't open players profiles while in combat!"
+  target-not-found: "%prefix% &cTarget is not online!"
+  help:
+    - "&6Player Profiles &7- by aglerr"
+    - "&6/playerprofiles help &7- brings up this messages."
+    - "&6/playerprofiles reload &7- reload the configuration."
+    - "&6/playerprofiles toggle &7- block/unblock someone from viewing your profile."
+    - "&6/playerprofiles creategui <name> &7- create a new gui."
+    - "&6/playerprofiles deletegui <name> &7- delete a specific gui."
+    - "&6/playerprofiles opengui <name> &7- open a gui."
+    - "&6/playerprofiles listgui &7- shows a list of loaded gui."
+  help-player:
+    - "&6Player Profiles &7- by aglerr"
+    - "&6/playerprofiles help &7- bring this help messages."
+    - "&6/playerprofiles toggle &7- block/unblock someone from viewing your profile."
+  reload: "%prefix% &aYou have successfully reloaded the plugin."
+  open-message: "%prefix% &aYou have opened &e%player_name% &aprofiles!"
+  on-cooldown: "%prefix% &cYou need to wait &e%time% seconds &cremaining!"
+  profileLocked: "%prefix% &cThat player profile is blocked!"
+  lockProfile:
+    - "&f"
+    - "%prefix% &fYou have &c&lLOCKED &fyour profile!"
+    - "%prefix% &7No one can see your profile now."
+    - "&f"
+  unlockProfile:
+    - "&f"
+    - "%prefix% &fYou have &a&lUNLOCK &fyour profile!"
+    - "%prefix% &7Everyone can see your profile now."
+    - "&f"
+  createGUI: "%prefix% &aYou have successfully created a new GUI called &e%guiName%"
+  deleteGUI: "%prefix% &cYou have successfully deleted a GUI called &e%guiName%"
+  guiAlreadyExist: "%prefix% &cA GUI called &e%guiName% &cis already exists!"
+  guiNotFound: "%prefix% &cCould not find any GUI called &e%guiName%&c."

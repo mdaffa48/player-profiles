@@ -1,0 +1,147 @@
+items:
+  closeMenu:
+    material: BARRIER
+    amount: 1
+    name: '&cClose'
+    slot: 49
+    glowing: false
+    CustomModelData: 0
+    hide_attributes: false
+    usePermission: false
+    permission: 'none'
+    lore: []
+    left-click-commands:
+      - '[CLOSE]'
+    right-click-commands:
+      - '[CLOSE]'
+  characterInformation:
+    material: head;%player_name%
+    amount: 1
+    name: '&6&lCharacter Information'
+    slot: 22
+    glowing: false
+    CustomModelData: 0
+    hide_attributes: true
+    usePermission: false
+    permission: 'none'
+    lore:
+      - '&7Viewing %player_name%''s information'
+      - '&6Name: &f%player_name%'
+      - '&6Balance: &a$%vault_eco_balance_formatted%'
+      - '&6Ping: &f%player_ping% ms'
+      - '&6Total Exp: &f%player_total_exp% xp'
+      - ''
+      - '&6&lPlayer Location:'
+      - '&6World: &f%player_world%'
+      - '&6X: &f%player_x%'
+      - '&6Y: &f%player_y%'
+      - '&6Z: &f%player_z%'
+      - ''
+      - '&aClick to bring this information to chat.'
+    left-click-commands:
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &6Name: &f%player_name%'
+      - '[MESSAGE] &6Balance: &a$%vault_eco_balance_formatted%'
+      - '[MESSAGE] &6Ping: &f%player_ping% ms'
+      - '[MESSAGE] &6Total Exp: &f%player_total_exp% xp'
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &6&lPlayer Location:'
+      - '[MESSAGE] &6World: &f%player_world%'
+      - '[MESSAGE] &6X: &f%player_x%'
+      - '[MESSAGE] &6Y: &f%player_y%'
+      - '[MESSAGE] &6Z: &f%player_z%'
+      - '[MESSAGE] &f'
+      - '[CLOSE]'
+    right-click-commands:
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &6Name: &f%player_name%'
+      - '[MESSAGE] &6Balance: &a$%vault_eco_balance_formatted%'
+      - '[MESSAGE] &6Ping: &f%player_ping% ms'
+      - '[MESSAGE] &6Total Exp: &f%player_total_exp% xp'
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &6&lPlayer Location:'
+      - '[MESSAGE] &6World: &f%player_world%'
+      - '[MESSAGE] &6X: &f%player_x%'
+      - '[MESSAGE] &6Y: &f%player_y%'
+      - '[MESSAGE] &6Z: &f%player_z%'
+      - '[MESSAGE] &f'
+      - '[CLOSE]'
+  tradePlayer:
+    material: EMERALD
+    amount: 1
+    name: '&6Trade with &f%player_name%'
+    slot: 23
+    glowing: false
+    CustomModelData: 0
+    hide_attributes: false
+    usePermission: false
+    permission: 'none'
+    lore:
+      - '&7Click to trade with %player_name%'
+    left-click-commands:
+      - '[PLAYER] trade %player_name%'
+      - '[CLOSE]'
+    right-click-commands:
+      - '[PLAYER] trade %player_name%'
+      - '[CLOSE]'
+  openCustomGUI:
+    material: DIAMOND
+    amount: 1
+    name: '&6Open &eexample &7menu'
+    slot: 32
+    glowing: false
+    CustomModelData: 0
+    hide_attributes: false
+    usePermission: false
+    permission: 'none'
+    lore:
+      - '&7Click to open example menu!'
+    left-click-commands:
+      - '[OPENGUIMENU] example'
+    right-click-commands:
+      - '[OPENGUIMENU] example'
+  punishPlayer:
+    material: DIAMOND_AXE
+    amount: 1
+    name: '&6Punish &f%player_name%'
+    slot: 24
+    glowing: true
+    CustomModelData: 0
+    hide_attributes: true
+    usePermission: true
+    permission: 'playerprofiles.punish'
+    lore:
+      - '&7Only players with &6playerprofiles.punish'
+      - '&7permission that can see this item.'
+      - ''
+      - '&aLeft click to kick %player_name%'
+      - '&aRight click to ban %player_name%'
+    left-click-commands:
+      - '[PLAYER] kick %player_name%'
+      - '[CLOSE]'
+    right-click-commands:
+      - '[PLAYER] ban %player_name%'
+      - '[CLOSE]'
+  rewardPlayer:
+    material: CHEST
+    amount: 1
+    name: '&6Reward &f%player_name%'
+    slot: 33
+    glowing: false
+    CustomModelData: 0
+    hide_attributes: true
+    usePermission: true
+    permission: 'playerprofiles.reward'
+    lore:
+      - '&7Only players with &6playerprofiles.reward'
+      - '&7permission that can see this item.'
+      - ''
+      - '&aLeft click to give %player_name% $500'
+      - '&aRight click to give %player_name% diamond'
+    left-click-commands:
+      - '[CONSOLE] eco give %player_name% 500'
+      - '[CLOSE]'
+    right-click-commands:
+      - '[CONSOLE] give %player_name% diamond 1'
+      - '[CLOSE]'
+
